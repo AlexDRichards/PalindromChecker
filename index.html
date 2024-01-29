@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="logo">
+        <img />
+    </div>
+    <div class="question-title">
+        <h1>Is it a Palindrome?</h1>
+    </div>
+    <div class="user-input">
+        <p>Enter text to check for a palindrome</p>
+        <form onsubmit="checkForPalindrome(); return false">
+            <input id='text-input' required />
+            <button id="check-btn">Submit</button>
+        </form>
+        <h2 id="result-positive">_____ is a palindrome</h2>
+        <h2 id="result-negative">______ is not a palindrome</h2>
+    </div>
+    <div class="hint"></div>
+    <div id="result"></div>
+</body>
+<script type="text/javascript" src="./script.js"></script>
+</html>
