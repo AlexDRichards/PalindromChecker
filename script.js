@@ -1,15 +1,11 @@
-// VARIABLES
+console.log(document.getElementById('userInput'))
 
-positiveResult = document.getElementById('result-positive');
-
-let userInput;
-
-function checkForPalindrome() {
-    userInput = document.getElementById('text-input').value
-    console.log(userInput.length)
-    positiveResult.style.display = 'block';
+function logSubmit(event) {
+//   log.textContent = `Form Submitted! Timestamp: ${event.timeStamp}`;
+  console.log(document.getElementById('userInput').value)
+  event.preventDefault();
 }
 
-function printWord() {
-    console.log(userInput)
-}
+const form = document.getElementById("form");
+const log = document.getElementById("log");
+form.addEventListener("submit", logSubmit);
