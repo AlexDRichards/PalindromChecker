@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./style.css" />
-    <title>Document</title>
+    <title>Palindrome Checker</title>
 </head>
 <body>
     <form id="form">
-        <label>Test field: <input id='userInput' type="text" /></label>
+        <label>Test field: 
+            <input id='text-input' type="text" required
+            oninvalid="this.setCustomValidity('Please input a value')"
+            />
+        </label>
         <br /><br />
-        <button type="submit">Submit form</button>
+        <button id="check-btn">Submit form</button>
       </form>
-      <p id="log"></p>
+      <div id="result">
+        <p id="log"></p>
+      </div>
 </body>
 <script type="text/javascript" src="./script.js"></script>
 </html>
